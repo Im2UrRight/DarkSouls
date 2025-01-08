@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New Tab</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="Resources/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Resources/img/favicon-16x16.png">
+        <link rel="shortcut icon" href="Resources/img/favicon.ico">
+        <!-- -->
+        <!-- meta tags -->
+        <meta name="author" content="Jonathan L. Ashby">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- resources -->
+        <link rel="stylesheet" type="text/css" href="Resources/css/ds3.css">
+        <script defer src="Resources/js/main.js"></script>
+        <script defer src="Resources/js/musicPlayer.js"></script>
+        <!-- things I didn't make -->
+        <link href="https://fonts.googleapis.com/css2?family=David+Libre&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/48c0986dd1.js" crossorigin="anonymous"></script>
+            
+    </head>
+    <body class="bgSS">
+    <div class="page-wraper">
+        <div class="header">
+            <header>
+                <h1><img class="logo" src="Resources/img/warriors-of-sunlight.png">Oh, hello there Warrior of Sunlight.</h1>
+                <!--small weather thingy-->
+                <!--settings button-->
+                <button class="settings-btn btn">Settings</button>
+            </header>
+        </div>
+        <main data-cards>
+        </main>
+        <footer>
+            <div>
+                <!-- the important content that resides in the footer-->
+                <div class="music-player">
+                    <audio id="audio" src="Resources/audio/Epilogue.mp3" type="audio/mp3"></audio>
+                    <div class="mp-nav">
+                    <p id="songTitle">Epilouge</p>
+                    <button id="prev" class="btn"><i class="fas fa-backward"></i></button>
+                    <button id="play" class="btn"><i class="fas fa-play"></i></button>
+                    <div class="mp-time"><span id="currTime">0:00</span>| <span id="durTime">0:00</span></div>
+                    <div class="pb-container">
+                        <div class="pb-bar"></div>
+                    </div>
+                    <button id="next" class="btn"><i class="fas fa-forward"></i></button>
+                </div>
+                </div>
+                <div class="signed">
+                    <a href="https://twitter.com/Im2UrRight">Designed by @Im2UrRight</a>
+                </div>
+        </footer>
+        <div class="settings-modal">
+                <button class="close-settings btn" aria-label="close settings">save and exit</button>
+                <input type="checkbox" id="autoplay">
+                <label for="autoplay">Enable/Disable Autoplay</label>
+                <h3 class="">Edit bookmarks</h3>
+                <div class="bkmk-settings">
+                    <div class="bkmks-list">
+                        <ul class="bkmk-list" data-lists></ul>
+                    </div>
+                    <div class="bkmks-edit">
+                        <div data-list-display-container>
+                        </div>
+                        <form class="new-bookmark-form" action="" data-new-bookmark-form>
+                            <div class="edit-bookmark hidden" data-new-bookmark-input-container>
+                                <div>
+                                    <input type="text" placeholder="site name" name="" id="" data-new-bookmark-name-input>
+                                    <input type="text" placeholder = "https://www.example.com" name="" id="" data-new-bookmark-url-input>
+                                </div>
+                                <div class="edit-bookmark-btns">
+                                    <button class="btn edit=save">save</button>
+                                    <button class="btn">cancel</button>
+                                </div>
+                            </div>
+                            <button class="btn-create" aria-label="create new bookmark" data-new-bookmark-btn>+</button>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </body>
+</html>

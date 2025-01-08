@@ -1,0 +1,391 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+/*-------------------------------*/
+/* Main Body */
+/*-------------------------------*/
+body{
+    background-color:#141414;
+    color:rgb(214, 214, 214);
+    font-family:'David Libre',serif;
+    font-size:16px;
+    padding:0px;
+    margin:0px;
+}
+/*-------------------------------*/
+/* Slide Show */
+/*-------------------------------*/
+.bgSS {
+    background-image:url('img/logo.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    animation: slideBg 160s infinite 0s ease-in-out;
+}
+@keyframes slideBg{
+    /* cemetery of ash */
+    0% {
+        background-image: url('img/Cemetery_of_Ash.png');
+    }
+    /*firelink shrine*/
+    6.66% {
+        background-image: url("img/Firekeep.jpeg");
+    }
+    /*High wall of Lotheric*/
+    13.32% {
+        background-image: url('img/LothericCastle.jpeg');
+    }
+    /*undead settlement*/
+    19.98% {
+        background-image: url('img/Undead_Settlement.png');
+    }
+    /*cathedreal of the deep*/
+    26.64% {
+        background-image: url('img/Cathedral_of_the_Deep.png');
+    }
+    /*catacombs of carthus*/
+    33.30% {
+        background-image: url('img/Abyss_Watchers.png');
+    }
+    /*smouldering lake*/
+    39.96% {
+        background-image: url('img/Smouldering_Lake.png');
+    }
+    /*irithyll of the boreal valley*/
+     46.62% {
+        background-image: url("img/irithyll.png");
+    }
+    /*profaned capital*/
+    53.28% {
+        background-image: url('img/Profane_Capital.png');
+    }
+    /*anor londo
+    63.12% {
+
+    }
+    */
+    /*lotheric catle*/
+    59.94% {
+        background-image: url("img/Lotheric_Castle_Dragons.png");
+    }
+    /*grand archives*/
+    66.60% {
+        background-image: url('img/Grand_Archives.png');
+    }
+    /*the painted world*/
+    73.26% {
+        background-image: url("img/PaintedWorld2.jpg");
+    }
+    /*dreg heap*/
+    79.92% {
+        background-image: url('img/Dreg_Heap.png');
+    }
+    /*the ringed city*/
+    86.58% {
+        background-image: url("img/RingedCity.jpg");
+    }
+    /*kiln of the first flame*/
+    93.24% {
+        background-image: url("img/EndGame.jpg");
+    }
+    
+    
+    
+    
+}
+/*-------------------------------*/
+/* general */
+/*-------------------------------*/
+h1{
+    display:inline-block;
+    font-size:2.8em;
+}
+h2{
+    border-bottom:solid rgb(169, 111, 4) 1px;
+    margin-bottom:14px;
+}
+h3{
+    border-bottom:solid rgb(169, 111, 4) 1px;
+    margin-bottom:8px;
+    font-size:2em;
+}
+p{
+    display:inline-block;
+    font-size:1.2em;
+}
+a{
+    font-size:1.2em;
+    text-decoration:none;
+    color:rgb(200, 200, 200);
+}
+li {
+    list-style: none;
+}
+a:link,
+a:visited{
+    transition: color .4s;
+}
+a:hover,
+a:active{
+    color:white;
+}
+.btn {
+    background-color: rgba(43, 42, 42, 0.76);
+    border-radius: 3px;
+    border:1px;
+    color:rgb(214, 214, 214);
+    padding:5px;
+    transition: background-color .4s, color .4s;
+    padding: 0, 2px, 0, 2px;
+}
+.btn:hover {
+    background-color: rgba(80, 80, 80, 0.76);
+    color:white;
+}
+.tooltip {
+    visibility: hidden;
+    padding: 5px;
+    border-radius: 6px;
+    text-align: center;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+    
+}
+.tooltip:hover {
+    visibility: visible;
+    opacity: 1;
+}
+/*-------------------------------*/
+/* form inputs */
+/*-------------------------------*/
+input[type=text] {
+    background:transparent;
+    border:1px solid transparent;
+    border-bottom:solid rgb(169, 111, 4) 1px;
+    margin-right:5px;
+    color:rgb(214, 214, 214);
+    padding: 5px;
+    border-radius:0px;
+    min-width: 180px;
+    height: 1.5em;
+}
+input[type=text]:focus, input[type=text]:active{
+    border:solid rgb(169, 111, 4) 1px;
+    border-radius:0px;
+    outline: 0px;
+}
+input[type=text]:disabled {
+    border: transparent;
+    color: rgb(200, 200, 200);
+}
+/*-------------------------------*/
+/* header */
+/*-------------------------------*/
+.header{ 
+    margin-top:1.2%;
+    padding: 10px 0;
+    background-image:url("img/tornBG_Long.png");
+    background-size:cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+header{
+    position: relative;
+    border-top:solid rgb(169, 111, 4) 1px;
+    padding-left:4%;
+    padding-top:8px;
+    margin:auto 1%;
+}
+.logo{
+    display:inline-block;
+    height:1em;
+}
+.settings-btn {
+    position: absolute;
+    right: 10px;
+    height: 1em;
+}
+/*-------------------------------*/
+/* main */
+/*-------------------------------*/
+main {
+    min-height: 400px;
+    height:auto;
+    max-height: 620px;
+    width:84%;
+    margin:3% auto;
+    display:flex;
+    gap: 1.5em;
+    background-image: url(img/tornBG_v3.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+main > div {
+    /*border:2px solid #fff;*/
+    flex-basis:100%;
+    padding: 25px 25px;
+}
+.main > ul li:last-child{
+    border-bottom:solid rgb(169, 111, 4) 1px;
+    margin-bottom:8px;
+}
+/*-------------------------------*/
+/* footer */
+/*-------------------------------*/
+footer{
+    background-image:url("img/tornBG_Long_Bottom.png");
+    background-size:cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width:100%;
+	height: 80px;
+    margin-top:1%;
+    margin-bottom:1.2%;
+    position: absolute;
+    padding-top:.5%;
+    bottom:0px;
+    text-align: center;
+}
+.signed{
+    font-size:9px;
+    color:gray;
+    border-bottom:solid rgb(169, 111, 4) 1px;
+    margin: 5px 1% 10px 1%
+}
+/*-------------------------------*/
+/* settings */
+/*-------------------------------*/
+.settings-modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width:70%;
+    max-width:600px;
+    min-height: 400px;
+    background-color:rgb(20, 20, 20);
+    border:rgb(29, 29, 29) solid 3px;
+    border-radius:10px;
+    padding:1em;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.modal-active {
+    visibility: visible ; 
+    opacity:1;
+}
+.bkmk-settings {
+    display:flex;
+    visibility: visible;
+}
+.bkmk-list {
+    width: 20%;
+    padding-right: 1em;
+}
+.bkmk-list li {
+    font-size: 1.3em;
+    color: rgb(63, 63, 63);
+    margin-bottom: 2px;
+    transition:color .4s, font-weight .4s;
+    cursor: pointer;
+}
+.bkmk-list li:hover {
+    color:#686868
+}
+.bkmk-list .active-list, .bkmk-list .active-list:hover {
+    color:#fff;
+    font-weight: bold;
+}
+.bkmks-edit {
+    width: 80%;
+    max-width:400px;
+    background-color: rgb(29, 29, 29);
+    border-radius: 5px;
+    padding: 12px;
+}
+.bkmks-edit li {
+    color:rgb(168, 168, 168);
+    border:solid 2px rgb(134, 134, 134);
+    border-radius: 5px;
+    padding:2px 5px;
+    margin-bottom: 2px;
+
+}
+.edit-bookmark {
+display: flex;
+font-size: 1.3em;
+color: rgb(63, 63, 63);
+margin-bottom: 2px;
+transition:color .4s, font-weight .4s;
+cursor: pointer;
+}
+.edit-bookmark input[type=text] {
+    width: 95%;
+}
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+.edit-bookmark-btns {
+    display:flex;
+}
+.edit-save:hover {
+    color:green;
+}
+.delete:hover {
+    color:red;
+}
+.btn-create {
+    width: 100%;
+    text-align:center;
+    color:rgb(168, 168, 168);
+    border:solid 2px rgb(134, 134, 134);
+    border-radius: 5px;
+    background:transparent;
+}
+.close-settings {
+    position: absolute;
+    top:2%;
+    right:2%;
+}
+/*-------------------------------*/
+/* music player */
+/*-------------------------------*/
+.music-player {
+    
+}
+.mp-nav {
+    display:inline-block;
+    min-width: 400px;
+    width: 60%;
+}
+ .mp-nav p, .mp-nav span, .mp-nav button, .mp-time {
+    display: inline-block;
+    margin-right:5px;
+}
+.pb-container{
+    display:inline-block;
+    min-width: 180px;
+    height: 1em;
+    border-radius: 8px;
+    text-align: left;
+    border:solid rgb(214, 214, 214) 2px;
+    cursor:pointer;
+    background:black;
+}
+.pb-bar {
+    border-radius: 8px;
+    background-color: rgb(214, 214, 214);
+    border: rgb(214, 214, 214) 2px;
+    height:100%;
+    width:0%;
+    transition: width 0.1s linear;
+}
+.pb-container:hover {
+    border-color: rgb(169, 111, 4)
+}
